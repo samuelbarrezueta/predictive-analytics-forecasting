@@ -3,11 +3,14 @@
 ## Structure
 
 ```
-notebooks/          Jupyter notebooks (exploration, modelling, forecasting)
-src/                Reusable Python code (data loading, features, models)
-data/raw/           Original, untouched data (not committed)
-data/processed/     Cleaned / transformed data (not committed)
-reports/figures/    Exported charts and figures for the report
+docs/                   Assignment brief and material from the teacher
+contributions/          Each person's drafts and handovers (folder per person, e.g. person1_joao_problem_framing/)
+notebooks/              Task2_Data_Understanding_Preparation.ipynb (Olena, Samuel), Task3_Predictive_Modelling.ipynb (Joao, Nuno, Pedro)
+src/                    Reusable Python code (data loading, features, models)
+data/raw/               Original, untouched data, e.g. highway_accidents.csv (not committed)
+data/processed/         Cleaned / transformed data (not committed)
+reports/figures/        Exported charts and figures for the report
+reports/presentation/   Final presentation (.pptx) where we paste our results
 ```
 
 ## Setup
