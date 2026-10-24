@@ -22,6 +22,14 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
+## Running the notebooks
+
+1. Get `highway_accidents.csv` from Samuel (not in git) and put it in `data/raw/`.
+2. Run `notebooks/Task2_Data_Understanding_Preparation.ipynb` first: it saves the prepared data to `data/processed/`.
+3. Then run `notebooks/Task3_Predictive_Modelling.ipynb`, which loads that prepared data.
+
+In Colab, each notebook asks you to upload the files it needs instead.
+
 ## Working together
 
 - Pull before you start: `git pull`
