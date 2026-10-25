@@ -9,8 +9,8 @@ Who owns what, and who depends on whom.
 | 1 | Joao | Problem formulation, metrics & baseline model | Task 1, Task 3 | Task 3 | None to start; final predictions from Persons 4 & 5 |
 | 2 | Olena | EDA & data leakage audit | Task 2 (data understanding & quality) | Task 2 | Person 1 (target framing) |
 | 3 | Samuel | Preprocessing, feature engineering & time-aware split | Task 2 (data preparation & experimental setup) | Task 2 | Person 1 (framing), Person 2 (EDA & leakage flags) |
-| 4 | Nuno | _TBD_ | _TBD_ | Task 3 | Person 3 (split datasets) |
-| 5 | Pedro | _TBD_ | _TBD_ | Task 3 | Person 3 (split datasets) |
+| 4 | Pedro | Tree-based ensembles (Random Forest, Gradient Boosting) | Task 3 | Task 3 (Section 7.1) | Person 3 (split datasets) |
+| 5 | Nuno | Non-tree models & originality analysis | Task 3, originality | Task 3 (Section 7.2) | Person 3 (split datasets) |
 
 **Notebooks:** `notebooks/Task2_Data_Understanding_Preparation.ipynb` (Olena, Samuel) and `notebooks/Task3_Predictive_Modelling.ipynb` (Joao, Nuno, Pedro).
 
@@ -72,12 +72,35 @@ Who owns what, and who depends on whom.
 
 ---
 
-## Person 4 (Nuno): _TBD_
+## Person 4 (Pedro): Model Strategy A – Tree-Based & Ensemble Models
 
-_To be filled in._
+**Task focus:** Task 3 (Predictive Modelling — Ensembles), Section 7.1 of the Task 3 notebook
+
+**Dependencies:** Person 3 for preprocessed datasets and temporal splits.
+
+**Action items**
+- Implement, tune and evaluate tree-based ensembles (Random Forest, Histogram Gradient Boosting).
+- Tune hyperparameters on the validation set (2022–2023) only.
+- Address class imbalance (class weights) and re-calibrate probabilities on validation.
+- Explain predictions with permutation feature importance.
+
+**Deliverables**
+- Executable notebook section for tree-based / ensemble models.
+- Performance table, PR curve and feature importance chart compared against the baseline (`reports/figures/task3_trees_*.png`).
 
 ---
 
-## Person 5 (Pedro): _TBD_
+## Person 5 (Nuno): Model Strategy B – Non-Tree Models & Originality / Value-Add Analysis
 
-_To be filled in._
+**Task focus:** Task 3 (Predictive Modelling — Non-Tree), Section 7.2 of the Task 3 notebook, and the originality component.
+
+**Dependencies:** Person 3 for preprocessed data.
+
+**Action items**
+- Implement, tune and evaluate non-tree models (e.g. MLP / neural network, SVM, LDA).
+- Compare against the baseline (Person 1) and the tree ensembles (Person 4).
+- Lead the originality / value-add analysis (e.g. GIS hotspot map, cost-benefit matrix, spatial risk clusters).
+
+**Deliverables**
+- Executable notebook section for non-tree models and the originality component.
+- Model comparison contribution for the final evaluation section.
