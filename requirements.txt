@@ -4,4 +4,5 @@ matplotlib
 seaborn
 scikit-learn>=1.6
 statsmodels
+folium
 jupyterlab

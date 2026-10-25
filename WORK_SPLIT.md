@@ -92,15 +92,17 @@ Who owns what, and who depends on whom.
 
 ## Person 5 (Nuno): Model Strategy B – Non-Tree Models & Originality / Value-Add Analysis
 
-**Task focus:** Task 3 (Predictive Modelling — Non-Tree), Section 7.2 of the Task 3 notebook, and the originality component.
+**Task focus:** Task 3 (Predictive Modelling — Non-Tree), Sections 7.2–7.3 of the Task 3 notebook, and the originality component (Section 8).
 
 **Dependencies:** Person 3 for preprocessed data.
 
 **Action items**
-- Implement, tune and evaluate non-tree models (e.g. MLP / neural network, SVM, LDA).
-- Compare against the baseline (Person 1) and the tree ensembles (Person 4).
-- Lead the originality / value-add analysis (e.g. GIS hotspot map, cost-benefit matrix, spatial risk clusters).
+- Implement, tune and evaluate non-tree models: bag of 5 MLP neural networks on undersampled data (class imbalance), and LDA.
+- Tune on the validation set only, re-calibrate probabilities (sigmoid) on validation.
+- Compare against the baseline (Person 1) and the tree ensembles (Person 4); select the final model on validation (Section 7.3).
+- Originality: cost-benefit of ALS capacity, GPS hotspot grid checked out-of-time, interactive Folium map, value of GPS location for the model (Section 8).
 
 **Deliverables**
-- Executable notebook section for non-tree models and the originality component.
-- Model comparison contribution for the final evaluation section.
+- Executable notebook sections 7.2, 7.3 and 8.
+- Figures `reports/figures/task3_nontree_*.png`, `task3_value_vs_capacity.png`, `task3_hotspots.png` and the map `task3_hotspot_map.html`.
+- Slides 17, 18, 21–24 and 26 of the group presentation.

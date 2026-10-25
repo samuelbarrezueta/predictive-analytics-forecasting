@@ -15,8 +15,10 @@ reports/presentation/   Final presentation (.pptx) where we paste our results
 
 ## Setup
 
+Use **Python 3.13** (as in Colab): older scikit-learn versions give slightly different tree-model results.
+
 ```bash
-python3 -m venv .venv
+python3.13 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 jupyter lab
@@ -26,7 +28,7 @@ jupyter lab
 
 1. The data (`data/raw/highway_accidents.csv`) comes with the repo, nothing to download.
 2. Run `notebooks/Task2_Data_Understanding_Preparation.ipynb` first: it saves the prepared data to `data/processed/`.
-3. Then run `notebooks/Task3_Predictive_Modelling.ipynb`, which loads that prepared data.
+3. Then run `notebooks/Task3_Predictive_Modelling.ipynb`, which loads that prepared data. It also reads `data/raw/highway_accidents.csv` for the GPS hotspot analysis (Section 8) and saves the interactive map to `reports/figures/task3_hotspot_map.html`.
 
 In Colab, each notebook asks you to upload the files it needs instead.
 
